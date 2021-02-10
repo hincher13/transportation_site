@@ -11,28 +11,34 @@
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
 
     <title>S3: Super Smooth Shipping</title>
   </head>
+
   <body>
-    <header style="border: solid black">
-      <div class="container ml-auto">
+    <header>
+      <div class="container-fluid">
         <div class="row">
           <div class="col"></div>
+          <div class="col"></div>
           <div class="col">
-              <a role="button" class="btn btn-link" href="tel: +12345612345"
-              ><i class="fa fa-phone"></i>(800)-111-1111</a
+            <a role="button" class="btn btn-link" href="tel: +12345612345"
+              ><i class="fa fa-phone text-success fa-lg"></i> (800)-123-4567</a
             >
           </div>
+          <div class="col mt-2">Call us 24/7/365</div>
+          <div class="col">Buttons go here</div>
         </div>
       </div>
     </header>
 
-    <nav
-      class="navbar navbar-expand-sm navbar-light sticky-top"
-      style="border: solid black"
-    >  <a class="navbar-brand" href="index.html"
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+      <a class="navbar-brand" href="index.html"
         ><img src="img/logo_s3.png" alt="S3" height="35"
       /></a>
       <button
@@ -50,15 +56,135 @@
           <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
         </ul>
       </div>
-
     </nav>
 
-    <div>
-      <h2>Blank</h2>
-      <h3>Smoother than you</h3>
-      <p>
-        Explore our great services and ship your product with us!
-      </p>
+    <!-- SERRVICE CARDS (FIND SHIPPERS, CARRIERS & CAREERS)-->
+
+    <div class="container-fluid">
+      <div class="row">
+        <p>Carousel containg photos goes here</p>
+      </div>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-2 text-center">
+          <div class="card-body border border-info serviceCard">
+            Find Your Solution
+            <button type="button" class="btn btn-info">For Shippers</button>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2 text-center">
+          <div class="card-body border border-info serviceCard">
+            Find Your Load
+            <button type="button" class="btn btn-info">For Carriers</button>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-2 text-center">
+          <div class="card-body border border-info serviceCard">
+            Find Your Job
+            <button type="button" class="btn btn-info">For Careers</button>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+
+      <!-- END SERVICE CARDS -->
+
+      <!-- AWARDS ACCORDION -->
+      <div class="row row-content">
+        <div class="col-3">
+        </div>
+        <div class="col-6 text-center ">
+          <h3>Awards</h3>
+          <div id="accordion">
+            <div class="card">
+              <div role="tab" class="card-header">
+                <h4>
+                  <a
+                  class="collapsed text-decoration-none"
+                  data-toggle="collapse"
+                  data-target="#smartWay"
+                >
+                  SmartWay <small>Environment(logo here)</small>
+                  </a>
+                </h4>
+              </div>
+              <div class="collapse" id="smartWay" data-parent="#accordion">
+                <div class="card-body"></div>
+                <p class="d-none d-sm-block">
+                  What is a SmartWay Vehicle? EPA's SmartWay program certifies
+                  the top 20% lowest-emitting cars and trucks for each model
+                  year. This provides car buyers with an easy way to identify
+                  the cleanest, most efficient vehicles. The very best of these
+                  vehicles earn the SmartWay Elite certification.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div role="tab" class="card-header">
+              <h4>
+                <a
+                  class="collapsed text-decoration-none"
+                  data-toggle="collapse"
+                  data-target="#tiaMember"
+                >
+                  TIA Member <small>Performance Certified</small>
+                </a>
+              </h4>
+              <div class="collapse" id="tiaMember" data-parent="#accordion">
+                <div class="card-body">
+                  <p class="d-none d-sm-block">
+                    We are a top 3PL provider (put more text here)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div role="tab" class="card-header">
+              <h4>
+                <a
+                  class="collapsed text-decoration-none"
+                  data-toggle="collapse"
+                  data-target="#inboundLogistics"
+                >
+                  Inbound Logistics Top 100 <small>3PL Provider 2020</small>
+                </a>
+              </h4>
+              <div class="collapse" id="inboundLogistics" data-parent="#accordion">
+                <div class="card-body">
+                  <p class="d-none d-sm-block">
+                    We are a top 3PL provider (put more text here)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div role="tab" class="card-header">
+              <h4>
+                <a
+                  class="collapsed text-decoration-none"
+                  data-toggle="collapse"
+                  data-target="#bestPlaceToWork"
+                >
+                  Best Place To Work <small>Top Workplace 2020</small>
+                </a>
+              </h4>
+              <div class="collapse" id="bestPlaceToWork" data-parent="#accordion">
+                <div class="card-body">
+                  <p class="d-none d-sm-block">
+                    Our employees love working for us (put more text here)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END AWARDS ACCORDION -->
     </div>
 
     <footer>

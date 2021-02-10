@@ -4,6 +4,11 @@
 }
 
 .navbar {
-    background-color:pink;
+    background-color:#0093d0;
     padding-bottom: 30px
+}
+
+.serviceCard {
+    border-radius: 20px;
+    width: 15rem;
 }
