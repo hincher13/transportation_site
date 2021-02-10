@@ -1,58 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Required meta tags always come first -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
 
     <title>S3: Super Smooth Shipping</title>
-</head>
-<body>
-    
-    <header>
-        <div>
-            <h1>Company Name</h1>
-            <h2>company motto</h2>
+  </head>
+  <body>
+    <header style="border: solid black">
+      <div class="container ml-auto">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col">
+              <a role="button" class="btn btn-link" href="tel: +12345612345"
+              ><i class="fa fa-phone"></i>(800)-111-1111</a
+            >
+          </div>
         </div>
+      </div>
     </header>
 
+    <nav
+      class="navbar navbar-expand-sm navbar-light sticky-top"
+      style="border: solid black"
+    >  <a class="navbar-brand" href="index.html"
+        ><img src="img/logo_s3.png" alt="S3" height="35"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#s3Navbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="s3Navbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+
+    </nav>
+
     <div>
-        <h2>Blank</h2>
-        <h3>Our Campsites</h3>
-        <p>Explore our growing database of curated campsites and leave your own reviews!</p>
+      <h2>Blank</h2>
+      <h3>Smoother than you</h3>
+      <p>
+        Explore our great services and ship your product with us!
+      </p>
     </div>
 
     <footer>
-        <div>
-            <h5>Links</h5>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Sites</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-        <div>
-            <h5>Social</h5>
-            <a href="http://instagram.com/">Instagram</a>
-            <a href="http://facebook.com/">Facebook</a>
-            <a href="http://twitter.com/">Twitter</a>
-            <a href="http://youtube.com/">YouTube</a>
-        </div>
-        <div>
-            Tel: 1-206-555-1234<br />
-            Email: campsites@nucamp.com
-        </div>
+      <div>
+        <h5>Links</h5>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Sites</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Social</h5>
+        <a href="http://instagram.com/">Instagram</a>
+        <a href="http://facebook.com/">Facebook</a>
+        <a href="http://twitter.com/">Twitter</a>
+        <a href="http://youtube.com/">YouTube</a>
+      </div>
+      <div>
+        Tel: 1-206-555-1234<br />
+        Email: shipping@3s.com
+      </div>
     </footer>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-
-</body>
+  </body>
 </html>
