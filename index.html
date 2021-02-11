@@ -25,17 +25,17 @@
   </head>
 
   <body>
-      <div class="container-fluid top-bar">
-        <div class="row">
-          <div class="col"></div>
-          <div class="col"></div>
-          <div class="col">
+      <div class="container-fluid top-bar" style="border:solid black">
+        <div class="row" style="border:solid black">
+          <div class="col" style="border:solid black"></div>
+          <div class="col" style="border:solid black"></div>
+          <div class="col" style="border:solid black">
             <a role="button" class="btn btn-link" href="tel: +12345612345"
               ><i class="fa fa-phone text-success fa-lg"></i> (800)-123-4567</a
             >
           </div>
-          <div class="col mt-2">Call us 24/7/365</div>
-          <div class="col">
+          <div class="col mt-2" style="border:solid black">Call us 24/7/365</div>
+          <div class="col" style="border:solid black">
             <button type="button" class="btn btn-info">Support Docs</button>
             <button type="button" class="btn btn-success">Log In</button>
         </div>
@@ -66,49 +66,73 @@
 
 <!-- ATTEMPTING TO PUT A VIDEOHEADER HERE -->
 <header>
-<div class="overlay"></div> <!--Not sure I need this line-->
+  <div class="overlay"></div> <!--Not sure I need this line-->
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
       <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
     </video>
-    <div class="container h-100">
-      <div class="d-flex h-100 text-center align-items-center">
-        <div class="w-100 text-white">
-          <h1 class="display-3">Welcome to S3</h1>
-          <p class="lead mb-0">A new level of smooth</p>
+  <div class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white">
+        <h1 class="display-3">SMOOTH LOGISTICS</h1>
+        <p class="lead mb-0 pb-5">Smoother than a fresh jar of Skippy</p>
+        
+        <!-- START QUOTING BOX -->
+        <div class="row" >
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body border border-info quote_box">
+                <div class="row" >
+                  <div class="col">
+                    <h6 id="request_rate"><u>Request Rate</u></h6>
+                  </div>
+                  
+                </div>
+
+              <div class="row">
+                <div class="col-lg-4">
+                  <label for="pickZip">Where are you shipping from?</label>
+                  <input type="text" name="pickZip" id="pickZip" pattern="[0-9]*" placeholder="Pick up zip">
+                </div>
+                <div class="col-lg-4 ">
+                  <label for="dropZip">Where are you shipping too?</label>
+                  
+                  <input type="text" name="dropZip" id="dropZip" pattern="[0-9]*" placeholder="Drop off zip">
+                </div>
+                <div class="col-lg-4">
+                  
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="ftl" name="freightTypeRadios" value="ftl"/>
+                    <label for="ftl" class="form-check-label">FTL</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="ltl" name="freightTypeRadios" value="ltl"/>
+                    <label for="ltl" class="form-check-label">LTL</label>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                </div>
+                <div class="col-lg-4">
+                  <button type="button" class="btn btn-info">Get Quote</button>
+                </div>
+              </div>
+    
+            </div>
+
+          </div>
+          <!-- END QUOTING BOX -->
         </div>
       </div>
     </div>
 </header>
 
-  <!-- CAROUSEL -->
     <div class="container-fluid">
-      <div class="row row-content">
-        <div class="col-md-8 mx-auto">
-          <div id="homeCarousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel inner">
-              <div class="carousel-item active">
-                <img class="d-block w-25" src="img/logo_s3.png" alt="PUT ALT TEXT HERE">
-                <div class="carousel-caption">
-                  <h3>This is a carasousel caption</h3>
-                  <p class="d-none d-sm-block">This is text under the carousel</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-25" src="img/logo_s3.png" alt="PUT ALT TEXT HERE">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-25" src="img/logo_s3.png" alt="PUT ALT TEXT HERE">
-              </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
+      
        <!-- SERRVICE CARDS (FIND SHIPPERS, CARRIERS & CAREERS)--> 
 
-      <div class="row">
+      <div class="row pt-5">
         <div class="col-md-1"></div>
         <div class="col-md-2 text-center">
           <div class="card-body border border-info serviceCard">
@@ -241,7 +265,7 @@
     <!-- START FOOTER -->
     <footer>
 
-      <div class="container">
+      <div class="container-fluid" id="footer_container">
 
         <div class="row row-content">
           <div class="col-xl-4 text-center" >
@@ -354,7 +378,7 @@
         </div>
         <!-- END SOCIAL LINKS -->
 
-        <div class="row" style="border:solid black;">
+        <div class="row" >
           <div class="col-lg-8">
           2021 SUPER SMOOTH SHIPPING ALL RIGHTS RESERVED
           </div>
