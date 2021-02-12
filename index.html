@@ -25,28 +25,29 @@
   </head>
 
   <body>
-      <div class="container-fluid top-bar" style="border:solid black">
-        <div class="row" style="border:solid black">
-          <div class="col" style="border:solid black"></div>
-          <div class="col" style="border:solid black"></div>
-          <div class="col" style="border:solid black">
-            <a role="button" class="btn btn-link" href="tel: +12345612345"
+      <div class="container-fluid top-bar">
+        <div class="row">
+          <div class="col-md-4 my-auto">
+              <a href="https://www.crazygames.com/game/truck-simulator-russia" target="_blank"><i class="fa fa-truck"></i></a> Call Us 24/7/365          
+          </div>
+          <div class="col-md-4 my-auto text-center  d-md-inline">
+              <a role="button" class="btn btn-link" href="tel: +12345612345"
               ><i class="fa fa-phone text-success fa-lg"></i> (800)-123-4567</a
             >
           </div>
-          <div class="col mt-2" style="border:solid black">Call us 24/7/365</div>
-          <div class="col" style="border:solid black">
-            <button type="button" class="btn btn-info">Support Docs</button>
-            <button type="button" class="btn btn-success">Log In</button>
+          <div class="col-md-4 my-auto text-right">
+            <button type="button" class="btn btn-success ml-4">Log In</button>
+          </div>
         </div>
-        </div>
-      </div>
+      </div>     
 
+<!-- START NAVBAR -->
     <nav class="navbar navbar-expand-sm navbar-light sticky-top">
       <a class="navbar-brand" href="index.html"
         ><img src="img/logo_s3.png" alt="S3" height="50"
+        href="index.html"
       /></a>
-      <p class="mt-3">Super Smooth Shipping</p>
+      <p class="mt-3">(S3)Super Smooth Shipping</p>
       <button
         class="navbar-toggler"
         type="button"
@@ -57,16 +58,24 @@
       </button>
       <div class="collapse navbar-collapse" id="s3Navbar">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-item" data-toggle="dropdown"> Services  </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="services.html"> All Services</a></li>
+                <li><a class="dropdown-item" href="ftl.html"> Full Truckload</a></li>
+                <li><a class="dropdown-item" href="ltl.html"> Less Than Truckload </a></li>
+              </ul>
+          </li>
           <li class="nav-item"><a class="nav-link" href="#">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
         </ul>
       </div>
     </nav>
+    <!-- END NAVBAR -->
 
 <!-- ATTEMPTING TO PUT A VIDEOHEADER HERE -->
 <header>
-  <div class="overlay"></div> <!--Not sure I need this line-->
+  <!-- <div class="overlay"></div> THIS OVERLAY IS OFF -->
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
       <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
     </video>
@@ -84,7 +93,7 @@
               <div class="card-body border border-info quote_box">
                 <div class="row" >
                   <div class="col">
-                    <h6 id="request_rate"><u>Request Rate</u></h6>
+                    <h6 id="request_rate"><u>REQUEST RATE</u></h6>
                   </div>
                   
                 </div>
@@ -173,7 +182,7 @@
                     data-toggle="collapse"
                     data-target="#smartWay"
                   >
-                    SmartWay <small>Environment(logo here)</small>
+                    SmartWay <small>Environment Friendly</small>
                   </a>
                 </h4>
               </div>
@@ -268,7 +277,7 @@
       <div class="container-fluid" id="footer_container">
 
         <div class="row row-content">
-          <div class="col-xl-4 text-center" >
+          <div class="col-lg-4 text-center" >
 
             <!-- START FOOTER FORM -->
             <div class="container-fluid">
@@ -277,25 +286,25 @@
                   <h5>Have a question?</h5>
                   <hr>
                 </div>
-                <div class="col-md-10">
+                <div class="col-xl-10">
                   <form>
                     <div class="form-group row">
-                      <label for="firstName" class="col-md-2 col-form-label">Name
+                      <label for="name" class="col-md-2 col-form-label">Name
                       </label>
-                      <div class="col-md-10">
+                      <div class="col-xl-10">
                         <input type="text" class="form-control" id="name" name="name" placeholder="Name">
                       </div>
                     </div>
                     
                     <div class="form-group row">
                       <label for="email" class="col-md-2 col-form-label">Email</label>
-                      <div class="col-md-10">
+                      <div class="col-xl-10">
                         <input type="text" class="form-control" id="email" name="email" placeholder="Email">
                       </div>
                     </div>
                     <div class="form-group row">
                       <label for="message" class="col-md-2 mr-xl-1">Message</label>
-                      <div class="col-md-10 ml-xl-5">
+                      <div class="col-xl-10 ml-xl-5">
                         <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message"></textarea>
                       </div>
                     </div>
@@ -320,13 +329,13 @@
           <!-- END FOOTER FORM -->
 
 <!-- START FOOTER LINKS -->
-          <div class="col-xl-4 pt-3">
+          <div class="col-lg-4 pt-3">
             <table class="table borderless">
               <tr class="footer_link">
-                <th><a href="#">Services</a></th>
+                <th><a href="services.html">Services</a></th>
                 <th><a href="#">About Us</a></th>
                 <th><a href="#">Jobs</a></th>
-                <th><a href="#">Careers</a></th>
+                <th><a href="#">Carriers</a></th>
               </tr>
               <tr>
                 <td>Link 1</td>
@@ -349,7 +358,7 @@
             </table>
           </div>
           <!-- CONNECT WITH US -->
-          <div class="col-xl-4 text-center">
+          <div class="col-lg-4 text-center">
             <h5 class="text-center">Connect with us</h5>
             <hr>
             <a role="button" class="btn btn-link text-decoration-none" href="tel:18001234567"><i class="fa fa-phone"></i> (800) 123 - 4567 </a><br/>
@@ -379,13 +388,13 @@
         <!-- END SOCIAL LINKS -->
 
         <div class="row" >
-          <div class="col-lg-8">
+          <div class="col-md-8">
           2021 SUPER SMOOTH SHIPPING ALL RIGHTS RESERVED
           </div>
-          <div class="col-lg-2 text-nowrap">
+          <div class="col-md-2 text-nowrap">
             <a href="#">Privacy Policy</a>
           </div>
-          <div class="col-lg-2 text-nowrap">
+          <div class="col-md-2 text-nowrap">
             <a href="#">Cookie Policy</a>
           </div>
         </div>
