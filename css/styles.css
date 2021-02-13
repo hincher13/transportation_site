@@ -1,22 +1,20 @@
 .top-bar {
-    /* background-color:rgba(91, 192, 222, 1); */
     background: linear-gradient(90deg, rgba(91,192,222,1) 0%, rgba(247,247,247,1) 52%, rgba(91,192,222,1) 100%);
 }
 
 .logo_header {
     position: relative;
- 
 }
 
 .navbar {
-
-    padding-bottom: 30px
+    padding-bottom: 30px;
 }
 
 .serviceCard {
     border-radius: 20px;
     width: 15rem;
 }
+
 .borderless td, .borderless th {
     border:none;
 }
@@ -78,6 +76,20 @@ header {
     border-radius: 30px;
 
 }
+.map-container-2{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+    .map-container-2 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
+    
 
 #footer_container {
     background: linear-gradient(90deg, rgba(91,192,222,1) 0%, rgba(247,247,247,1) 52%, rgba(91,192,222,1) 100%);
@@ -88,4 +100,8 @@ header {
 	.navbar .nav-item .dropdown-menu{ display: none; }
 	.navbar .nav-item:hover .nav-link{ color: black;  }
 	.navbar .nav-item:hover .dropdown-menu{ display: block; }
-	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+    .navbar .nav-item .dropdown-menu{ margin-top:0; }
+    
+#navbar{
+    background-color: rgb(255, 255, 255, .5);
+}
