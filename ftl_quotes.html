@@ -77,100 +77,176 @@
 
 <!-- END HEADER SECTIONS -->
 
- <div class="container-fluid" style="border:solid black">
-    <div class="row" style="border:solid black">
-        <div class="col text-center" style="border:solid black">
+ <div class="container-fluid">
+    <div class="row justify-content-center ">
+        <div class="col-8 text-center pt-5" >
             <h3>Select Service</h3>
         </div>
     </div>
-    <div class="row" style="border:solid black">
-        <div class="col" style="border:solid black">
-            Full Truckload Card Image
-        </div>
-        <div class="col" style="border:solid black">
-            Less Than Truckload Card Image
+    <div class="row" style="height: 50px;">
+        <div class="col">
         </div>
     </div>
-    <div class="row" style="border:solid black">
-        <div class="col text-center" style="border:solid black">
-            <h3>Quote Information</h3>
+    <div class="row justify-content-center">
+        <div class="col-7 col-lg-4 text-center">
+            <a href="ftl_quotes.html"><div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/ftl_truck.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Full Truckload</h5>
+                  
+                </div>
+            </div></a>
+        </div>
+        <div class="col-7 col-lg-4 text-center">
+            <a href="ltl_quotes.html"><div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/ltl_truck.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Less-Than-Truckload</h5>
+                  
+                </div>
+            </div></a>
         </div>
     </div>
-    <div class="row" style="border:solid black">
-        <div class="col" style="border:solid black">
-            <div class="container-fluid" style="border:solid black">
-                <div class="row" style="border:solid black">
-                    <div class="col" style="border:solid black">
-                        Where are you shipping from?
+    <div class="row" style="height: 100px;">
+        <div class="col">
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-8 text-center">
+            <a id="ftl_quote_info"><h3>Quote Information</h3></a>
+        </div>
+    </div>
+    <div class="row" style="height: 50px;">
+        <div class="col">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-7 col-md-4 mt-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <h5>Where are you shipping from?</h5>
                     </div>
                 </div>
-                <div class="row" style="border:solid black">
-                    <div class="col" style="border:solid black">
-                        Pick Up Location Input
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="p_location">Pick up location *</label>
+                            <input type="text" class="form-control" id="p_location" name="p_location" placeholder="City, State"/>
+                        </div>
                     </div>
                 </div>    
-                <div class="row" style="border:solid black">
-                    <div class="col" style="border:solid black">
-                        Pick Up Date Input
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="p_date">Pick up date *</label>
+                            <input type="date" class="form-control" id="p_date" name="p_date"/>
+                        </div>
                     </div>
                 </div>    
-                <div class="row" style="border:solid black">
-                    <div class="col" style="border:solid black">
-                        Business Pick up Toggle <br/>
-                        Residential Pickup
+                <div class="row">
+                    <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pickuptype" id="b_pickup">
+                            <label class="form-check-label" for="b_pickup">
+                                Business Pickup
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pickuptype" id="r_pickup">
+                            <label class="form-check-label" for="r_pickup">
+                                Residential Pickup
+                            </label>
+                        </div>
                     </div>
                 </div>    
             </div>
         </div>
-        <div class="col" style="border:solid black">
-            <div class="container-fluid" style="border:solid black">
-                <div class="row" style="border:solid black">
-                    <div class="col" style="border:solid black">
-                        Where are you shipping to?
+        <div class="col-7 col-md-4 mt-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <h5>Where are you shipping to?</h5>
                     </div>
                 </div>
-                <div class="row" style="border:solid black">
-                    <div class="col" style="border:solid black">
-                        Delivery Location Input
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="d_location">Delivery location *</label>
+                            <input type="text" class="form-control" id="d_location" name="d_location" placeholder="City, State"/>
+                        </div>
                     </div>
                 </div>    
-                <div class="row" style="border:solid black">
-                    <div class="col" style="border:solid black">
-                        Business Pick up Toggle <br/>
-                        Residential Pickup
+                <div class="row">
+                    <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="deliverytype" id="b_delivery">
+                            <label class="form-check-label" for="b_delivery">
+                                Business Delivery
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="deliverytype" id="r_delivery">
+                            <label class="form-check-label" for="r_delivery">
+                                Residential Delivery
+                            </label>
+                          </div>
                     </div>
                 </div>    
                 
             </div>
         </div>
-        <div class="col" style="border:solid black">
-            <div class="container-fluid" style="border:solid black">
-                <div class="row" style="border:solid black">
-                    <div class="col" style="border:solid black">
-                        Additional Shipping Info
+        <div class="col-7 col-md-4 mt-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <h5>Additional Shipping Info</h5>
                     </div>
                 </div>
-                <div class="row" style="border:solid black">
-                    <div class="col" style="border:solid black">
-                        Commodity Input (drop down)
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="sel1">Commodity *</label>
+                            <select class="form-control" id="commodity">
+                              <option>Apples</option>
+                              <option>Cleaning</option>
+                              <option>Chemical</option>
+                              <option>Other</option>
+                            </select>
+                        </div>
                     </div>
                 </div>    
-                <div class="row" style="border:solid black">
-                    <div class="col" style="border:solid black">
-                        Total Weight
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="d_location">Total Weight *</label>
+                            <input type="text" class="form-control" id="weight" name="weight" placeholder="lbs"/>
+                        </div>
                     </div>
                 </div>    
-                <div class="row" style="border:solid black">
-                    <div class="col" style="border:solid black">
-                        Special Equipment (Drop Down)
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="sel1">Special Equipment </label>
+                            <select class="form-control" id="s_equipment">
+                              <option>None</option>
+                              <option>Lift Gate</option>
+                              <option>Driver Assist</option>
+                              <option>Hazardous Material</option>
+                            </select>
+                        </div>
                     </div>
                 </div>    
             </div>
         </div>
     </div>
-    <div class="row" style="border:solid black">
-        <div class="col text-right" style="border:solid black">
-            <a class="btn btn-info" href="quotes_contact.html" role="button">Next</a>
+    <div class="row">
+        <div class="col-11 text-md-right mt-2">
+            <a class="btn btn-info btn-lg" href="quotes_contact.html" role="button">Next</a>
+        </div>
+    </div>
+    <div class="row" style="height: 100px;">
+        <div class="col">
         </div>
     </div>
 </div>
