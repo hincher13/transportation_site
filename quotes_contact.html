@@ -77,52 +77,86 @@
 
 <!-- END HEADER SECTIONS -->
 
-<div class="container-fluid" style="border: solid black;">
-    <div class="row" style="border: solid black;">
-        <div class="col text-center" style="border: solid black;">
-           <h3>Where Should We Send Your Quote?</h3>
+<div class="container-fluid" >
+    <div class="row" >
+        <div class="col text-center" >
+           <h1>Where Should We Send Your Quote?</h1>
         </div>
     </div>
-    <div class="row" style="border: solid black;">
-        <div class="col" style="border: solid black;">
-           Line Left Blank for spacing?  Maybe not.
+    <div class="row" style="height: 50px;">
+        <div class="col">
         </div>
     </div>
-    <div class="row justify-content-center" style="border: solid black;">
-        <div class="col-4" style="border: solid black;">
-           First Name Input
+    <div class="row justify-content-center" >
+        <div class="col-4" >
+            <div class="form-group">
+                <label for="firstname">First Name *</label>
+                <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name"/>
+            </div>
         </div>
-        <div class="col-4" style="border: solid black;">
-            Last Name Input
+        <div class="col-4" >
+            <div class="form-group">
+                <label for="lastname">Last Name *</label>
+                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name"/>
+            </div>
          </div>
     </div>
-    <div class="row" style="border: solid black;">
-        <div class="col" style="border: solid black;">
-           Company Name Input
+    <div class="row justify-content-center" >
+        <div class="col-8" >
+            <div class="form-group">
+                <label for="companyname">Company Name *</label>
+                <input type="text" class="form-control" id="companyname" name="companyname" placeholder="Company Name"/>
+            </div>
         </div>
     </div>
-    <div class="row justify-content-center" style="border: solid black;">
-        <div class="col-4" style="border: solid black;">
-            Email Input
+    <div class="row justify-content-center" >
+        <div class="col-4" >
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="text" class="form-control" id="email" name="email" placeholder="Email"/>
+            </div>
          </div>
-         <div class="col-4" style="border: solid black;">
-             Phone Input
+         <div class="col-4" >
+            <div class="form-group">
+                <label for="phone">Phone *</label>
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone"/>
+            </div>
           </div>
     </div>
-    <div class="row justify-content-center" style="border: solid black;">
-        <div class="col-4" style="border: solid black;">
-            left blank for spacing
+    <div class="row justify-content-center" >
+        <div class="col-4" >
+            
          </div>
-        <div class="col-4" style="border: solid black;">
-           <a class="btn btn-info" role="button">>Submit class button?(make button make message appear and then back to home page</a>
-        </div>
+        <div class="col-4" >
+            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#thank_you_modal">
+                Submit
+              </button>
     </div>
-    <div class="row" style="border: solid black;">
-        <div class="col" style="border: solid black;">
-           Line for spacing
+    <div class="row" style="height: 100px;">
+        <div class="col">
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="thank_you_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Thank you!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          A representative will contact you shortly
+        </div>
+        <div class="modal-footer">
+          <a type="button" class="btn btn-primary btn-lg" href="index.html">Home</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
      <!-- START FOOTER -->
      <footer>
 
